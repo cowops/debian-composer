@@ -23,7 +23,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-composer }
+         - { role: cowops.debian-composer }
 
 Tasks
 -----
