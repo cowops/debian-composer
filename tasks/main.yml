@@ -8,8 +8,8 @@
   shell:
     curl -sS https://getcomposer.org/installer | php && /bin/mv -f ./composer.phar /usr/bin/composer
     creates=/usr/bin/composer
-  when: current_composer_version|failed
+  when: current_composer_version is failed
 
 - name: upgrade composer
   shell: composer self-update
-  when: current_composer_version|success
+  when: current_composer_version is success
